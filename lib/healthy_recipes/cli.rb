@@ -110,7 +110,7 @@
     def next_step
         puts ""
         puts "Type exit or type any key to return to all courses.".colorize(:magenta)
-        @input = gets.strip
+        @input = gets.strip.downcase
     end
     
     def farewell

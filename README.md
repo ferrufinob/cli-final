@@ -1,6 +1,6 @@
 # HealthyRecipes
 
-The user can search for recipes by course. The recipes will be from Skinnyeats from skinnyeats.com
+The user can search for recipes by course. The recipes will be from Skinnytaste from skinnytaste.com
 The user  inputs their course type of choice they will be asked to choose which recipe they will like to view.
 Once they have selected the recipe to view they will be able to acquire the ingredients required and the instructions.
 If user types the wrong input they will be asked to type number again.
