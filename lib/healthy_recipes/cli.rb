@@ -16,15 +16,15 @@
     
     def greetings
         colorizer = Lolize::Colorizer.new
-        colorizer.write "\n-------------------------------------------------------------------------\n"
+        colorizer.write "\n--------------------------------------------------------------------------------\n"
         
         colorizer.write "                            Welcome!!                                        \n "
         puts " "
        
-        colorizer.write "\             Please choose from the categories below                        \n"
-        puts " "
+        colorizer.write "\                      Please choose from the list below                         \n"
+        colorizer.write "\             type the number corresponding to the course and recipe you'd like    \n"
         
-        colorizer.write "\-------------------------------------------------------------------------\n"
+        colorizer.write "\----------------------------------------------------------------------------------\n"
         puts ""
     end 
     
