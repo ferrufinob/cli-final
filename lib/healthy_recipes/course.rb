@@ -1,4 +1,4 @@
-class VegetarianRecipes::Course
+class HealthyRecipes::Course
     attr_accessor :name, :recipes, :ref
 
     @@all = []
@@ -11,13 +11,13 @@ class VegetarianRecipes::Course
     end
 
     def self.all
-        VegetarianRecipes::Scraper.scrape_courses if @@all.empty?
+        HealthyRecipes::Scraper.scrape_courses if @@all.empty?
         @@all
     end
 
     def get_recipes
         # return a recipes array
-        VegetarianRecipes::Scraper.scrape_recipes(self) if @recipes.empty?
+        HealthyRecipes::Scraper.scrape_recipes(self) if @recipes.empty?
     end
 
     def save

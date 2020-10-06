@@ -1,7 +1,5 @@
-class HealthyRecipes::CLI
-
     require 'pry'
-    class VegetarianRecipes::CLI
+    class HealthyRecipes::CLI
     
     def start
         @input =  nil
@@ -31,7 +29,7 @@ class HealthyRecipes::CLI
     end 
     
     def get_courses
-        @courses = VegetarianRecipes::Course.all
+        @courses = HealthyRecipes::Course.all
     end
     
     def list_courses

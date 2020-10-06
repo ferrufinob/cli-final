@@ -1,5 +1,5 @@
 
-class VegetarianRecipes::Scraper
+class HealthyRecipes::Scraper
     def self.scrape_courses
 
         doc = Nokogiri::HTML(open("https://www.skinnytaste.com/recipes/"))
@@ -7,7 +7,7 @@ class VegetarianRecipes::Scraper
         scraping_block.each do |course|
             name = course.text
             ref = course.css("a").attr("href").value
-            VegetarianRecipes::Course.new(name, ref) 
+            HealthyRecipes::Course.new(name, ref) 
         end
     end
 
@@ -18,7 +18,7 @@ class VegetarianRecipes::Scraper
              recipes.each do |recipe|
                name = recipe.css("a h4").text
                url = recipe.css("a").attr("href").value
-             VegetarianRecipes::Recipe.new(name, course, url)
+             HealthyRecipes::Recipe.new(name, course, url)
 
            end   
         end
