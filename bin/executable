@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/healthy_recipes'
+
+HealthyRecipes::CLI.new.start
