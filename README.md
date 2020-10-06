@@ -1,8 +1,8 @@
 # HealthyRecipes
 
 The user can search for recipes by course. The recipes will be from Skinnyeats from skinnyeats.com
-The user  inputs their course type of choice they will be asked to choose which recipe they will like to view. 
-Once they have selected the recipe to view they will be able to acquire the ingredients required and the instructions. 
+The user  inputs their course type of choice they will be asked to choose which recipe they will like to view.
+Once they have selected the recipe to view they will be able to acquire the ingredients required and the instructions.
 If user types the wrong input they will be asked to type number again.
 
 ## Installation
@@ -15,11 +15,11 @@ gem 'healthy_recipes'
 
 And then execute:
 
-    $ bundle install
+ $ bundle install
 
 Or install it yourself as:
 
-    $ gem install healthy_recipes
+$ gem install healthy_recipes
 
 ## Usage
 
@@ -33,8 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/<github username>/healthy_recipes. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/<github username>/healthy_recipes/blob/master/CODE_OF_CONDUCT.md).
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/ferrufinob/healthy_recipes. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/<github username>/healthy_recipes/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
