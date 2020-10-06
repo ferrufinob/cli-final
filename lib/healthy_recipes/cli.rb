@@ -21,7 +21,7 @@
         colorizer.write "                            Welcome!!                                        \n "
         puts " "
        
-        colorizer.write "\                      Please choose from the list below                         \n"
+        colorizer.write "\                          Please choose from the list below                         \n"
         colorizer.write "\             type the number corresponding to the course and recipe you'd like    \n"
         
         colorizer.write "\----------------------------------------------------------------------------------\n"
@@ -109,7 +109,7 @@
     
     def next_step
         puts ""
-        puts "Type exit or type any key to return to all courses.".colorize(:magenta)
+        puts "Type exit to exit or type any key to to view all courses again.".colorize(:magenta)
         @input = gets.strip.downcase
     end
     
