@@ -1,8 +1,9 @@
 # HealthyRecipes
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/healthy_recipes`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The user can search for recipes by course. The recipes will be from Skinnyeats from skinnyeats.com
+The user  inputs their course type of choice they will be asked to choose which recipe they will like to view. 
+Once they have selected the recipe to view they will be able to acquire the ingredients required and the instructions. 
+If user types the wrong input they will be asked to type number again.
 
 ## Installation
 
