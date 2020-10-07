@@ -5,11 +5,11 @@
         @input =  nil
         until @input == "exit"
             greetings
-            puts ""
             get_courses
             list_courses
             get_user_course
             next_step
+            system("clear")
         end
         farewell
     end
@@ -18,13 +18,13 @@
         colorizer = Lolize::Colorizer.new
         colorizer.write "\n--------------------------------------------------------------------------------\n"
         
-        colorizer.write "                            Welcome!!                                        \n "
+        colorizer.write "                            Welcome!!                                              \n"
         puts " "
        
-        colorizer.write "\                          Please choose from the list below                         \n"
-        colorizer.write "\             type the number corresponding to the course and recipe you'd like    \n"
+        colorizer.write "\                          Please choose from the list below                       \n"
+        colorizer.write "\             type the number of the course and recipe you'd like to try           \n"
         
-        colorizer.write "\----------------------------------------------------------------------------------\n"
+        colorizer.write "\---------------------------------------------------------------------------------\n"
         puts ""
     end 
     
@@ -64,13 +64,14 @@
         puts ""
         puts ""
         colorizer = Lolize::Colorizer.new
-        colorizer.write "\n-------------------------------------------------------------------------\n"
+        colorizer.write "\n-------------------------------------------------------------------------------\n"
         puts ""
-        puts "Here are recipes for #{course.name}".colorize(:magenta)
-        puts ""
+        puts "Recipes for #{course.name} loading...".colorize(:magenta)
         course.recipes.each.with_index(1) do |recipe, index|
-            puts "#{index}. #{recipe.name}"
+            sleep(2)
+          puts "#{index}. #{recipe.name}"
         end  
+        puts "Type the number of the recipe to see more details".colorize(:magenta)
         get_user_recipe(course)
     end
     
@@ -114,7 +115,8 @@
     end
     
     def farewell
-        puts "Thank you for stopping by!!!".colorize(:magenta)
+        puts "       Thank you for stopping by!!!".colorize(:magenta)
+        puts ""
     end
     
     end
