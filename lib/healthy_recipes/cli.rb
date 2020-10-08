@@ -17,7 +17,7 @@
     
     def greetings
         colorizer = Lolize::Colorizer.new
-        colorizer.write "\n--------------------------------------------------------------------------------\n"
+        lolize
         
         colorizer.write "                            Welcome!!                                              \n"
         puts " "
@@ -25,7 +25,7 @@
         colorizer.write "\                          Please choose from the list below                       \n"
         colorizer.write "\             type the number of the course and recipe you'd like to try           \n"
         
-        colorizer.write "\---------------------------------------------------------------------------------\n"
+        lolize
         puts ""
     end 
     
@@ -67,11 +67,11 @@ end
         
         puts ""
         puts ""
-        colorizer = Lolize::Colorizer.new
-        colorizer.write "\n-------------------------------------------------------------------------------\n"
+        lolize
         puts ""
         puts "Recipes for #{course.name} loading...".colorize(:magenta)
         course.recipes.each.with_index(1) do |recipe, index|
+            sleep(1)
           puts "#{index}. #{recipe.name}"
         end  
         puts "Type the number of the recipe to see more details".colorize(:magenta)
@@ -100,6 +100,8 @@ end
     
     def show_ingredients(recipe)
         puts ""
+        lolize
+        puts ""
         puts  recipe.name.colorize(:magenta)
         puts ""
         puts "Ingredients"
@@ -116,8 +118,14 @@ end
     end
      
     def farewell
-        puts "       Thank you for stopping by!!!".colorize(:magenta)
+        puts ""
+        puts "Thank you for stopping by!!!".colorize(:magenta)
         puts ""
     end
     
+    def lolize
+        colorizer = Lolize::Colorizer.new
+        colorizer.write "\n-------------------------------------------------------------------------------\n"
     end
+
+end
