@@ -11,12 +11,12 @@ class HealthyRecipes::Course
     end
 
     def self.all
-        HealthyRecipes::Scraper.scrape_courses if @@all.empty?
-        @@all
+         HealthyRecipes::Scraper.scrape_courses if @@all.empty?
+         @@all
     end
-
+    
+     # return a recipes array
     def get_recipes
-        # return a recipes array
         HealthyRecipes::Scraper.scrape_recipes(self) if @recipes.empty?
     end
 

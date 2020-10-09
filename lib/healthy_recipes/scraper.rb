@@ -1,7 +1,6 @@
 
 class HealthyRecipes::Scraper
     def self.scrape_courses
-
         doc = Nokogiri::HTML(open("https://www.skinnytaste.com/recipes/"))
         scraping_block = doc.css(".categories ul li")
         scraping_block.each do |course|
@@ -25,13 +24,11 @@ class HealthyRecipes::Scraper
 
         
         def self.scrape_ingredients(recipe)
-            
-            doc = Nokogiri::HTML(open("#{recipe.url}"))
-            
+            doc = Nokogiri::HTML(open("#{recipe.url}")) 
             ingredients = doc.css("ul.wprm-recipe-ingredients li.wprm-recipe-ingredient")
             ingredients.each do |o|
               inf = o.text.strip  
-           recipe.ingredients << inf
+              recipe.ingredients << inf
           end 
         end 
 
@@ -44,8 +41,7 @@ class HealthyRecipes::Scraper
             recipe.instructions << instruct
           end
         end
-           
-        end
+      end
 
         
     
