@@ -46,7 +46,6 @@
                  show_recipes_for(chosen_course)
                    break
                  else 
-                     puts ""
                       puts "oops wrong number try again".colorize(:red)
                       puts ""  
                       chosen_course = gets.strip.to_i
