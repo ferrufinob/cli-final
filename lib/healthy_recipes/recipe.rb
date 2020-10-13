@@ -18,7 +18,7 @@ class HealthyRecipes::Recipe
         @@all
     end
      
-    # lets course know about the recipe
+    # notify course of recipes as recipe gets instantiated
     def add_to_course
         @course.recipes << self unless @course.recipes.include?(self)
     end

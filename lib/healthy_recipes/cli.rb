@@ -58,6 +58,7 @@
     end
     
     def show_recipes_for(chosen_course)
+      # course array w/ index of chosen_course
          course = get_courses[chosen_course - 1]
           course.get_recipes
           puts ""

@@ -6,7 +6,8 @@ class HealthyRecipes::Scraper
         scraping_block.each do |course|
             name = course.text
             ref = course.css("a").attr("href").value
-            HealthyRecipes::Course.new(name, ref) 
+            # with each course, createa new instance of course
+            HealthyRecipes::Course.new({ name: name, ref: ref}) 
         end
     end
 
@@ -17,6 +18,7 @@ class HealthyRecipes::Scraper
              recipes.each do |recipe|
                name = recipe.css("a h4").text
                url = recipe.css("a").attr("href").value
+              #  instance with each recipe
              HealthyRecipes::Recipe.new(name, course, url)
            end   
         end
