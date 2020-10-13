@@ -17,7 +17,8 @@ class HealthyRecipes::Recipe
     def self.all
         @@all
     end
-
+     
+    # lets course know about the recipe
     def add_to_course
         @course.recipes << self unless @course.recipes.include?(self)
     end

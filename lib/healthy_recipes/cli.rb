@@ -30,7 +30,7 @@
          end
     
     def list_courses
-          puts "Type the number of the course to see its recipes".colorize(:magenta)
+          puts "Type the number of the course".colorize(:magenta)
           puts ""
            get_courses.each.with_index(1) do |course, index|
             puts "#{index}. #{course.name}"    
@@ -68,7 +68,7 @@
               sleep(1)
                puts "#{index}. #{recipe.name}"
              end  
-             puts "Type the number of the recipe to see more details".colorize(:magenta)
+             puts "Type the number of the recipe to see ingredients & instructions".colorize(:magenta)
              get_user_recipe(course)
             end
     

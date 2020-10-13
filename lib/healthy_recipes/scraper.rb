@@ -18,7 +18,6 @@ class HealthyRecipes::Scraper
                name = recipe.css("a h4").text
                url = recipe.css("a").attr("href").value
              HealthyRecipes::Recipe.new(name, course, url)
-
            end   
         end
 
