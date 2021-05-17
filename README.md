@@ -21,9 +21,6 @@ Or install it yourself as:
 
 $ gem install healthy_recipes
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
